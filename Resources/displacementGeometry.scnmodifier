@@ -1,0 +1,25 @@
+#include <metal_stdlib>
+#include <metal_texture>
+using namespace metal;
+
+#pragma arguments
+sampler displacementMapSampler;
+texture2d<float>  displacementMap;
+int displacementMappingChannel;
+
+#pragma body
+// Store the coordinates of the original background texture
+
+// displacementMappingChannel is 0 when diffuse channel is 1 and vice versa
+// Basically SceneKit isn't really flexible enough for this purpose without custom rendering, 
+// so we use the other texture coordinates to keep the originals.
+
+_geometry.texcoords[displacementMappingChannel] =  (scn_node.modelViewProjectionTransform * _geometry.position).xy /  _geometry.position.w ;
+
+// Update position with displacement
+
+float3 displacement = displacementMap.sample(displacementMapSampler, _geometry.texcoords[0].xy).rgb;
+displacement -= (0.5);
+displacement *= 0.2; 
+_geometry.position.xyz += displacement.xyz;
+

@@ -1,0 +1,85 @@
+
+#include <metal_stdlib>
+#include <metal_texture>
+using namespace metal;
+
+#pragma arguments
+texture2d<float>  cameraTexture;
+texture2d<float>  displacementMap;
+sampler displacementMapSampler;
+sampler cameraTextureSampler;
+float backgroundInfluence;
+float backgroundAverage;
+int useDisplacement;
+int useLuma;
+
+#pragma opaque
+#pragma body
+
+if( !is_null_texture(cameraTexture) )
+{
+
+float4 cameraColor = float4(0.0);
+
+/* 
+check to see if we need to use warped geometry
+*/
+
+if(useDisplacement > 0)
+{
+    // use the color from the displaced location that was stored in the placeholderTextureTexcoord 
+
+    cameraColor = cameraTexture.sample(cameraTextureSampler, (_surface.placeholderTextureTexcoord * in.fragmentPosition.w) / 2.* float2(1.,-1.0) + float2(0.5,0.5) );
+}
+else 
+{
+    // Use the color from the cameraTexture at this fragment location
+
+    float2 inverseResolution = scn_frame.inverseResolution;
+    float2 coords = float2(in.fragmentPosition.xy*inverseResolution.xy-1.);
+    cameraColor = cameraTexture.sample( sampler(coord::normalized,filter::linear,address::clamp_to_zero), float2(1.0 + coords.x,1.0 + coords.y));
+}
+
+
+float4 textureColor = _output.color;
+
+
+if(textureColor.w == 0 )
+{
+
+_output.color = cameraColor;
+
+}
+else if( useLuma < 1)
+{
+    _output.color = textureColor;
+}
+else {
+
+float4 destColor = cameraColor;
+float4 sourceColor = textureColor;
+
+
+
+float luma = dot(destColor.rgb, float3(0.299, 0.587, 0.114));
+
+float effect = ((luma / (1.0 * backgroundAverage) - 1.0) * backgroundInfluence + 1.0);
+sourceColor.rgb *= 1.0 * effect;
+
+sourceColor.a *= textureColor.w;
+
+sourceColor.rgb *= sourceColor.a;
+destColor.rgb *= 1.0 - sourceColor.a;
+
+float4 finalColor = float4(0.0);
+
+finalColor.rgb = sourceColor.rgb + destColor.rgb;
+finalColor.a = 1.0;//textureColor.a;
+
+_output.color = (float4(mix(_output.color.rgb, finalColor.rgb, finalColor.w   ), 1.0));
+//_output.color = finalColor;
+}
+}
+
+
+

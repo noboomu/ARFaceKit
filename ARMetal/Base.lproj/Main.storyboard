@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Metal View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BV1-FR-VrT" customClass="MetalViewController" customModule="ARMetal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="3se-qz-xqx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mtkView clipsSubviews="YES" contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float_Stencil8" autoResizeDrawable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usU-od-3Af">
+                                <rect key="frame" x="0.0" y="10" width="414" height="726"/>
+                                <viewLayoutGuide key="safeArea" id="t2l-bo-WCC"/>
+                                <color key="clearColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </mtkView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpV-Xl-1jb">
+                                <rect key="frame" x="10" y="676" width="77" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hR1-M6-Ech"/>
+                                    <constraint firstAttribute="width" constant="77" id="qhF-s0-LKE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="SWAP">
+                                    <color key="titleColor" red="0.32156863810000003" green="1" blue="0.027450980619999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="KXa-so-tIh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNs-Qk-J0p">
+                                <rect key="frame" x="327" y="676" width="77" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="77" id="Ku7-93-24B"/>
+                                    <constraint firstAttribute="width" constant="77" id="T87-VH-UF4"/>
+                                    <constraint firstAttribute="height" constant="50" id="kio-Gn-ZOo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="yuu-Dt-9B7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="REC">
+                                    <color key="titleColor" red="0.84571697700000004" green="0.16604599440000001" blue="0.16604599440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="NdN-oA-kYC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pE9-0L-S71">
+                                <rect key="frame" x="169" y="676" width="77" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="77" id="JMl-hn-06q"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="jem-6a-VVd"/>
+                                    <constraint firstAttribute="height" constant="50" id="vzU-eY-HqM"/>
+                                    <constraint firstAttribute="width" constant="77" id="xzk-bH-J2K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="p2U-dA-sUL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="usU-od-3Af" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" constant="10" id="4ec-fc-fzE"/>
+                            <constraint firstItem="usU-od-3Af" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="OuJ-ah-TMG"/>
+                            <constraint firstItem="3C0-cp-GOg" firstAttribute="bottom" secondItem="usU-od-3Af" secondAttribute="bottom" id="UF9-dw-56D"/>
+                            <constraint firstItem="3C0-cp-GOg" firstAttribute="bottom" secondItem="cpV-Xl-1jb" secondAttribute="bottom" constant="10" id="XYK-d4-jcC"/>
+                            <constraint firstItem="usU-od-3Af" firstAttribute="trailing" secondItem="3C0-cp-GOg" secondAttribute="trailing" id="ajE-2W-4nM"/>
+                            <constraint firstItem="3C0-cp-GOg" firstAttribute="trailing" secondItem="DNs-Qk-J0p" secondAttribute="trailing" constant="10" id="dvL-p9-hnl"/>
+                            <constraint firstItem="pE9-0L-S71" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="eBh-wL-Zdr"/>
+                            <constraint firstItem="usU-od-3Af" firstAttribute="leading" secondItem="3C0-cp-GOg" secondAttribute="leading" id="lMp-dI-b1j"/>
+                            <constraint firstItem="3C0-cp-GOg" firstAttribute="bottom" secondItem="pE9-0L-S71" secondAttribute="bottom" constant="10" id="sYw-ia-mKp"/>
+                            <constraint firstItem="3C0-cp-GOg" firstAttribute="bottom" secondItem="DNs-Qk-J0p" secondAttribute="bottom" constant="10" id="sx2-BL-Nen"/>
+                            <constraint firstItem="cpV-Xl-1jb" firstAttribute="leading" secondItem="3C0-cp-GOg" secondAttribute="leading" constant="10" id="tSj-56-4DM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3C0-cp-GOg"/>
+                    </view>
+                    <connections>
+                        <outlet property="mtkView" destination="usU-od-3Af" id="JDR-T4-UhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,1106 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		411409EF215045B50074CF43 /* Bowie2.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 411409EE215045B50074CF43 /* Bowie2.scnassets */; };
+		4115B69020BEF033000F1E1C /* GazeEstimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B5F420BEF032000F1E1C /* GazeEstimation.cpp */; };
+		4115B69120BEF033000F1E1C /* CCNF_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60520BEF032000F1E1C /* CCNF_patch_expert.cpp */; };
+		4115B69220BEF033000F1E1C /* LandmarkDetectionValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60620BEF032000F1E1C /* LandmarkDetectionValidator.cpp */; };
+		4115B69320BEF033000F1E1C /* LandmarkDetectorFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60720BEF032000F1E1C /* LandmarkDetectorFunc.cpp */; };
+		4115B69420BEF033000F1E1C /* LandmarkDetectorModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60820BEF032000F1E1C /* LandmarkDetectorModel.cpp */; };
+		4115B69520BEF033000F1E1C /* LandmarkDetectorParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60920BEF032000F1E1C /* LandmarkDetectorParameters.cpp */; };
+		4115B69620BEF033000F1E1C /* LandmarkDetectorUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60A20BEF032000F1E1C /* LandmarkDetectorUtils.cpp */; };
+		4115B69720BEF033000F1E1C /* Patch_experts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60B20BEF032000F1E1C /* Patch_experts.cpp */; };
+		4115B69820BEF033000F1E1C /* PAW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60C20BEF032000F1E1C /* PAW.cpp */; };
+		4115B69920BEF033000F1E1C /* PDM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60D20BEF032000F1E1C /* PDM.cpp */; };
+		4115B69A20BEF033000F1E1C /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60E20BEF032000F1E1C /* stdafx.cpp */; };
+		4115B69B20BEF033000F1E1C /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4115B60F20BEF032000F1E1C /* SVR_patch_expert.cpp */; };
+		4115B69C20BEF033000F1E1C /* Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61120BEF032000F1E1C /* Arithmetic.swift */; };
+		4115B69D20BEF033000F1E1C /* ArraySliceUnsafeMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61220BEF032000F1E1C /* ArraySliceUnsafeMemory.swift */; };
+		4115B69E20BEF033000F1E1C /* ArrayUnsafeMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61320BEF032000F1E1C /* ArrayUnsafeMemory.swift */; };
+		4115B69F20BEF033000F1E1C /* Auxiliary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61420BEF032000F1E1C /* Auxiliary.swift */; };
+		4115B6A020BEF033000F1E1C /* Convolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61520BEF032000F1E1C /* Convolution.swift */; };
+		4115B6A120BEF033000F1E1C /* Exponential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61620BEF032000F1E1C /* Exponential.swift */; };
+		4115B6A220BEF033000F1E1C /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61720BEF032000F1E1C /* FFT.swift */; };
+		4115B6A320BEF033000F1E1C /* Hyperbolic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61820BEF032000F1E1C /* Hyperbolic.swift */; };
+		4115B6A420BEF033000F1E1C /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61920BEF032000F1E1C /* Matrix.swift */; };
+		4115B6A520BEF033000F1E1C /* Pointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61A20BEF032000F1E1C /* Pointers.swift */; };
+		4115B6A620BEF033000F1E1C /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61B20BEF032000F1E1C /* Power.swift */; };
+		4115B6A720BEF033000F1E1C /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61C20BEF032000F1E1C /* Statistics.swift */; };
+		4115B6A820BEF033000F1E1C /* Trigonometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61E20BEF032000F1E1C /* Trigonometric.swift */; };
+		4115B6A920BEF033000F1E1C /* UnsafeMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B61F20BEF032000F1E1C /* UnsafeMemory.swift */; };
+		4115B6AA20BEF033000F1E1C /* UnsafeMutableMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B62020BEF032000F1E1C /* UnsafeMutableMemory.swift */; };
+		4115B6AB20BEF033000F1E1C /* condition_variable in Resources */ = {isa = PBXBuildFile; fileRef = 4115B62B20BEF032000F1E1C /* condition_variable */; };
+		4115B6AC20BEF033000F1E1C /* thread in Resources */ = {isa = PBXBuildFile; fileRef = 4115B62D20BEF032000F1E1C /* thread */; };
+		4115B6AD20BEF033000F1E1C /* tuple in Resources */ = {isa = PBXBuildFile; fileRef = 4115B62E20BEF032000F1E1C /* tuple */; };
+		4115B6AE20BEF033000F1E1C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4115B63A20BEF032000F1E1C /* index.html */; };
+		4115B6AF20BEF033000F1E1C /* Archive+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B68920BEF032000F1E1C /* Archive+Reading.swift */; };
+		4115B6B020BEF033000F1E1C /* Archive+Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B68A20BEF032000F1E1C /* Archive+Writing.swift */; };
+		4115B6B120BEF033000F1E1C /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B68B20BEF032000F1E1C /* Archive.swift */; };
+		4115B6B220BEF033000F1E1C /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B68C20BEF032000F1E1C /* Data+Compression.swift */; };
+		4115B6B320BEF033000F1E1C /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B68D20BEF032000F1E1C /* Data+Serialization.swift */; };
+		4115B6B420BEF033000F1E1C /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B68E20BEF032000F1E1C /* Entry.swift */; };
+		4115B6B520BEF033000F1E1C /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B68F20BEF032000F1E1C /* FileManager+ZIP.swift */; };
+		4115B6B920BEF098000F1E1C /* HCKalmanAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B6B720BEF098000F1E1C /* HCKalmanAlgorithm.swift */; };
+		4115B6BA20BEF098000F1E1C /* HCMatrixObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115B6B820BEF098000F1E1C /* HCMatrixObject.swift */; };
+		4127F03420AD4EE50010E5C0 /* daz3duv.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4127F03320AD4EE50010E5C0 /* daz3duv.plist */; };
+		4149E56D20DD744B0015FE76 /* displacementFragment.scnmodifier in Resources */ = {isa = PBXBuildFile; fileRef = 4149E56C20DD744B0015FE76 /* displacementFragment.scnmodifier */; };
+		414BD638209B8ABF00303B92 /* ShaderCommon.h in Sources */ = {isa = PBXBuildFile; fileRef = 414BD637209B8ABF00303B92 /* ShaderCommon.h */; };
+		414BD63A209B8E7A00303B92 /* ShaderCommon.metal in Sources */ = {isa = PBXBuildFile; fileRef = 414BD639209B8E7A00303B92 /* ShaderCommon.metal */; };
+		414BFD74209A2A7700FA5B1E /* AnimatedSpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414BFD73209A2A7700FA5B1E /* AnimatedSpriteNode.swift */; };
+		4157E8422072D67B00CBD760 /* LUT.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4157E8412072D67B00CBD760 /* LUT.metal */; };
+		41615DC320759C14004A9C50 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41615DC220759C14004A9C50 /* opencv2.framework */; };
+		41615DD12075A021004A9C50 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41615DD02075A021004A9C50 /* OpenCVWrapper.mm */; };
+		416854F020BE007300F27628 /* defaultCoords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 416854EF20BE007300F27628 /* defaultCoords.plist */; };
+		416854F220BE029900F27628 /* alternateCoords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 416854F120BE029900F27628 /* alternateCoords.plist */; };
+		416E0D5C207EA13D0074E9AD /* reducedIndices.bin in Resources */ = {isa = PBXBuildFile; fileRef = 416E0D51207EA13D0074E9AD /* reducedIndices.bin */; };
+		416E0DA6207EAE710074E9AD /* model_eye in Resources */ = {isa = PBXBuildFile; fileRef = 416E0DA4207EAE440074E9AD /* model_eye */; };
+		417F91F0207FDFF500DCB4A7 /* libtbbmalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F91ED207FDFF500DCB4A7 /* libtbbmalloc.a */; };
+		417F91F1207FDFF500DCB4A7 /* libtbb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F91EE207FDFF500DCB4A7 /* libtbb.a */; };
+		417F91F2207FDFF500DCB4A7 /* libtbbmalloc_proxy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F91EF207FDFF500DCB4A7 /* libtbbmalloc_proxy.a */; };
+		41864B7120C0ADA1002E184F /* Aviator.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 41864B7020C0ADA1002E184F /* Aviator.scnassets */; };
+		41864B7420C5CFA1002E184F /* makeupFragment.scnmodifier in Sources */ = {isa = PBXBuildFile; fileRef = 41864B7320C5CFA1002E184F /* makeupFragment.scnmodifier */; };
+		41864B7520C5D013002E184F /* makeupFragment.scnmodifier in Resources */ = {isa = PBXBuildFile; fileRef = 41864B7320C5CFA1002E184F /* makeupFragment.scnmodifier */; };
+		4187AFAF2053525A0080B6BC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187AFAE2053525A0080B6BC /* Utilities.swift */; };
+		4187AFB12056F1AA0080B6BC /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187AFB02056F1AA0080B6BC /* Overlay.swift */; };
+		4187AFB32056FE360080B6BC /* VirtualFaceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187AFB22056FE360080B6BC /* VirtualFaceContent.swift */; };
+		4198C32A20509FC700D27F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198C32920509FC700D27F2A /* AppDelegate.swift */; };
+		4198C32C20509FC700D27F2A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4198C32B20509FC700D27F2A /* Shaders.metal */; };
+		4198C32F20509FC700D27F2A /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198C32E20509FC700D27F2A /* Renderer.swift */; };
+		4198C33420509FC700D27F2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4198C33220509FC700D27F2A /* Main.storyboard */; };
+		4198C33620509FC700D27F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198C33520509FC700D27F2A /* Assets.xcassets */; };
+		4198C33920509FC700D27F2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4198C33720509FC700D27F2A /* LaunchScreen.storyboard */; };
+		41A09357206AF7F50058FA2E /* RenderDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A09356206AF7F50058FA2E /* RenderDestination.swift */; };
+		41A09359206AF8100058FA2E /* RenderDestinationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A09358206AF8100058FA2E /* RenderDestinationProvider.swift */; };
+		41A0935B206B167C0058FA2E /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0935A206B167C0058FA2E /* MetalViewController.swift */; };
+		41A0935E206C6FF70058FA2E /* RenderPixelBufferConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0935D206C6FF70058FA2E /* RenderPixelBufferConsumer.swift */; };
+		41A09360206C749F0058FA2E /* RenderedVideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0935F206C749F0058FA2E /* RenderedVideoWriter.swift */; };
+		41A09362206C87D90058FA2E /* FaceMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A09361206C87D90058FA2E /* FaceMask.swift */; };
+		41A98AD920ADF3310046D938 /* MaskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A98AD820ADF3310046D938 /* MaskInfo.swift */; };
+		41AD124C20AC9F4300B18803 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AD124B20AC9F4300B18803 /* Models.scnassets */; };
+		41B46AC22062D1CD00BA005B /* Retouch.metal in Sources */ = {isa = PBXBuildFile; fileRef = 41B46AC12062D1CD00BA005B /* Retouch.metal */; };
+		41C55EAA205C1888007DEC7B /* AVLoopedlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C55EA9205C1888007DEC7B /* AVLoopedlayer.swift */; };
+		41E184D820EEA3B000C835F3 /* geo2.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E184D720EEA3B000C835F3 /* geo2.scnassets */; };
+		41F68D9420D4916400605F94 /* displacementGeometry.scnmodifier in Resources */ = {isa = PBXBuildFile; fileRef = 41F68D9320D4916400605F94 /* displacementGeometry.scnmodifier */; };
+		AB42833302D3C702BB95FB24 /* Pods_ARMetal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878880176F7824272876B61 /* Pods_ARMetal.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1878880176F7824272876B61 /* Pods_ARMetal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARMetal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		411409EE215045B50074CF43 /* Bowie2.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Bowie2.scnassets; sourceTree = "<group>"; };
+		4115B5F420BEF032000F1E1C /* GazeEstimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GazeEstimation.cpp; sourceTree = "<group>"; };
+		4115B5F520BEF032000F1E1C /* GazeEstimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GazeEstimation.h; sourceTree = "<group>"; };
+		4115B5F820BEF032000F1E1C /* CCNF_patch_expert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNF_patch_expert.h; sourceTree = "<group>"; };
+		4115B5F920BEF032000F1E1C /* LandmarkCoreIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkCoreIncludes.h; sourceTree = "<group>"; };
+		4115B5FA20BEF032000F1E1C /* LandmarkDetectionValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkDetectionValidator.h; sourceTree = "<group>"; };
+		4115B5FB20BEF032000F1E1C /* LandmarkDetectorFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkDetectorFunc.h; sourceTree = "<group>"; };
+		4115B5FC20BEF032000F1E1C /* LandmarkDetectorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkDetectorModel.h; sourceTree = "<group>"; };
+		4115B5FD20BEF032000F1E1C /* LandmarkDetectorParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkDetectorParameters.h; sourceTree = "<group>"; };
+		4115B5FE20BEF032000F1E1C /* LandmarkDetectorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandmarkDetectorUtils.h; sourceTree = "<group>"; };
+		4115B5FF20BEF032000F1E1C /* Patch_experts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patch_experts.h; sourceTree = "<group>"; };
+		4115B60020BEF032000F1E1C /* PAW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAW.h; sourceTree = "<group>"; };
+		4115B60120BEF032000F1E1C /* PDM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDM.h; sourceTree = "<group>"; };
+		4115B60220BEF032000F1E1C /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		4115B60320BEF032000F1E1C /* SVR_patch_expert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVR_patch_expert.h; sourceTree = "<group>"; };
+		4115B60520BEF032000F1E1C /* CCNF_patch_expert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCNF_patch_expert.cpp; sourceTree = "<group>"; };
+		4115B60620BEF032000F1E1C /* LandmarkDetectionValidator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandmarkDetectionValidator.cpp; sourceTree = "<group>"; };
+		4115B60720BEF032000F1E1C /* LandmarkDetectorFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandmarkDetectorFunc.cpp; sourceTree = "<group>"; };
+		4115B60820BEF032000F1E1C /* LandmarkDetectorModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandmarkDetectorModel.cpp; sourceTree = "<group>"; };
+		4115B60920BEF032000F1E1C /* LandmarkDetectorParameters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandmarkDetectorParameters.cpp; sourceTree = "<group>"; };
+		4115B60A20BEF032000F1E1C /* LandmarkDetectorUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandmarkDetectorUtils.cpp; sourceTree = "<group>"; };
+		4115B60B20BEF032000F1E1C /* Patch_experts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Patch_experts.cpp; sourceTree = "<group>"; };
+		4115B60C20BEF032000F1E1C /* PAW.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PAW.cpp; sourceTree = "<group>"; };
+		4115B60D20BEF032000F1E1C /* PDM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PDM.cpp; sourceTree = "<group>"; };
+		4115B60E20BEF032000F1E1C /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
+		4115B60F20BEF032000F1E1C /* SVR_patch_expert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVR_patch_expert.cpp; sourceTree = "<group>"; };
+		4115B61120BEF032000F1E1C /* Arithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arithmetic.swift; sourceTree = "<group>"; };
+		4115B61220BEF032000F1E1C /* ArraySliceUnsafeMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraySliceUnsafeMemory.swift; sourceTree = "<group>"; };
+		4115B61320BEF032000F1E1C /* ArrayUnsafeMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayUnsafeMemory.swift; sourceTree = "<group>"; };
+		4115B61420BEF032000F1E1C /* Auxiliary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auxiliary.swift; sourceTree = "<group>"; };
+		4115B61520BEF032000F1E1C /* Convolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convolution.swift; sourceTree = "<group>"; };
+		4115B61620BEF032000F1E1C /* Exponential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exponential.swift; sourceTree = "<group>"; };
+		4115B61720BEF032000F1E1C /* FFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
+		4115B61820BEF032000F1E1C /* Hyperbolic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hyperbolic.swift; sourceTree = "<group>"; };
+		4115B61920BEF032000F1E1C /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		4115B61A20BEF032000F1E1C /* Pointers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pointers.swift; sourceTree = "<group>"; };
+		4115B61B20BEF032000F1E1C /* Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
+		4115B61C20BEF032000F1E1C /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		4115B61D20BEF032000F1E1C /* Surge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Surge.h; sourceTree = "<group>"; };
+		4115B61E20BEF032000F1E1C /* Trigonometric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trigonometric.swift; sourceTree = "<group>"; };
+		4115B61F20BEF032000F1E1C /* UnsafeMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsafeMemory.swift; sourceTree = "<group>"; };
+		4115B62020BEF032000F1E1C /* UnsafeMutableMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsafeMutableMemory.swift; sourceTree = "<group>"; };
+		4115B62220BEF032000F1E1C /* aggregator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aggregator.h; sourceTree = "<group>"; };
+		4115B62320BEF032000F1E1C /* aligned_space.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aligned_space.h; sourceTree = "<group>"; };
+		4115B62420BEF032000F1E1C /* atomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomic.h; sourceTree = "<group>"; };
+		4115B62520BEF032000F1E1C /* blocked_range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blocked_range.h; sourceTree = "<group>"; };
+		4115B62620BEF032000F1E1C /* blocked_range2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blocked_range2d.h; sourceTree = "<group>"; };
+		4115B62720BEF032000F1E1C /* blocked_range3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blocked_range3d.h; sourceTree = "<group>"; };
+		4115B62820BEF032000F1E1C /* cache_aligned_allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache_aligned_allocator.h; sourceTree = "<group>"; };
+		4115B62920BEF032000F1E1C /* combinable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = combinable.h; sourceTree = "<group>"; };
+		4115B62B20BEF032000F1E1C /* condition_variable */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = condition_variable; sourceTree = "<group>"; };
+		4115B62C20BEF032000F1E1C /* ppl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ppl.h; sourceTree = "<group>"; };
+		4115B62D20BEF032000F1E1C /* thread */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = thread; sourceTree = "<group>"; };
+		4115B62E20BEF032000F1E1C /* tuple */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tuple; sourceTree = "<group>"; };
+		4115B62F20BEF032000F1E1C /* concurrent_hash_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = concurrent_hash_map.h; sourceTree = "<group>"; };
+		4115B63020BEF032000F1E1C /* concurrent_lru_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = concurrent_lru_cache.h; sourceTree = "<group>"; };
+		4115B63120BEF032000F1E1C /* concurrent_priority_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = concurrent_priority_queue.h; sourceTree = "<group>"; };
+		4115B63220BEF032000F1E1C /* concurrent_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = concurrent_queue.h; sourceTree = "<group>"; };
+		4115B63320BEF032000F1E1C /* concurrent_unordered_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = concurrent_unordered_map.h; sourceTree = "<group>"; };
+		4115B63420BEF032000F1E1C /* concurrent_unordered_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = concurrent_unordered_set.h; sourceTree = "<group>"; };
+		4115B63520BEF032000F1E1C /* concurrent_vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = concurrent_vector.h; sourceTree = "<group>"; };
+		4115B63620BEF032000F1E1C /* critical_section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = critical_section.h; sourceTree = "<group>"; };
+		4115B63720BEF032000F1E1C /* enumerable_thread_specific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enumerable_thread_specific.h; sourceTree = "<group>"; };
+		4115B63820BEF032000F1E1C /* flow_graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flow_graph.h; sourceTree = "<group>"; };
+		4115B63920BEF032000F1E1C /* global_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global_control.h; sourceTree = "<group>"; };
+		4115B63A20BEF032000F1E1C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		4115B63C20BEF032000F1E1C /* _aggregator_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _aggregator_impl.h; sourceTree = "<group>"; };
+		4115B63D20BEF032000F1E1C /* _concurrent_queue_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _concurrent_queue_impl.h; sourceTree = "<group>"; };
+		4115B63E20BEF032000F1E1C /* _concurrent_unordered_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _concurrent_unordered_impl.h; sourceTree = "<group>"; };
+		4115B63F20BEF032000F1E1C /* _flow_graph_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _flow_graph_impl.h; sourceTree = "<group>"; };
+		4115B64020BEF032000F1E1C /* _flow_graph_indexer_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _flow_graph_indexer_impl.h; sourceTree = "<group>"; };
+		4115B64120BEF032000F1E1C /* _flow_graph_item_buffer_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _flow_graph_item_buffer_impl.h; sourceTree = "<group>"; };
+		4115B64220BEF032000F1E1C /* _flow_graph_join_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _flow_graph_join_impl.h; sourceTree = "<group>"; };
+		4115B64320BEF032000F1E1C /* _flow_graph_node_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _flow_graph_node_impl.h; sourceTree = "<group>"; };
+		4115B64420BEF032000F1E1C /* _flow_graph_tagged_buffer_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _flow_graph_tagged_buffer_impl.h; sourceTree = "<group>"; };
+		4115B64520BEF032000F1E1C /* _flow_graph_trace_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _flow_graph_trace_impl.h; sourceTree = "<group>"; };
+		4115B64620BEF032000F1E1C /* _flow_graph_types_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _flow_graph_types_impl.h; sourceTree = "<group>"; };
+		4115B64720BEF032000F1E1C /* _mutex_padding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _mutex_padding.h; sourceTree = "<group>"; };
+		4115B64820BEF032000F1E1C /* _range_iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _range_iterator.h; sourceTree = "<group>"; };
+		4115B64920BEF032000F1E1C /* _tbb_strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _tbb_strings.h; sourceTree = "<group>"; };
+		4115B64A20BEF032000F1E1C /* _tbb_windef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _tbb_windef.h; sourceTree = "<group>"; };
+		4115B64B20BEF032000F1E1C /* _template_helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _template_helpers.h; sourceTree = "<group>"; };
+		4115B64C20BEF032000F1E1C /* _x86_eliding_mutex_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _x86_eliding_mutex_impl.h; sourceTree = "<group>"; };
+		4115B64D20BEF032000F1E1C /* _x86_rtm_rw_mutex_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _x86_rtm_rw_mutex_impl.h; sourceTree = "<group>"; };
+		4115B64F20BEF032000F1E1C /* gcc_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcc_armv7.h; sourceTree = "<group>"; };
+		4115B65020BEF032000F1E1C /* gcc_generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcc_generic.h; sourceTree = "<group>"; };
+		4115B65120BEF032000F1E1C /* gcc_ia32_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcc_ia32_common.h; sourceTree = "<group>"; };
+		4115B65220BEF032000F1E1C /* gcc_itsx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcc_itsx.h; sourceTree = "<group>"; };
+		4115B65320BEF032000F1E1C /* ibm_aix51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ibm_aix51.h; sourceTree = "<group>"; };
+		4115B65420BEF032000F1E1C /* icc_generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icc_generic.h; sourceTree = "<group>"; };
+		4115B65520BEF032000F1E1C /* linux_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linux_common.h; sourceTree = "<group>"; };
+		4115B65620BEF032000F1E1C /* linux_ia32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linux_ia32.h; sourceTree = "<group>"; };
+		4115B65720BEF032000F1E1C /* linux_ia64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linux_ia64.h; sourceTree = "<group>"; };
+		4115B65820BEF032000F1E1C /* linux_intel64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linux_intel64.h; sourceTree = "<group>"; };
+		4115B65920BEF032000F1E1C /* mac_ppc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mac_ppc.h; sourceTree = "<group>"; };
+		4115B65A20BEF032000F1E1C /* macos_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macos_common.h; sourceTree = "<group>"; };
+		4115B65B20BEF032000F1E1C /* mic_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mic_common.h; sourceTree = "<group>"; };
+		4115B65C20BEF032000F1E1C /* msvc_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msvc_armv7.h; sourceTree = "<group>"; };
+		4115B65D20BEF032000F1E1C /* msvc_ia32_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msvc_ia32_common.h; sourceTree = "<group>"; };
+		4115B65E20BEF032000F1E1C /* sunos_sparc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sunos_sparc.h; sourceTree = "<group>"; };
+		4115B65F20BEF032000F1E1C /* windows_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windows_api.h; sourceTree = "<group>"; };
+		4115B66020BEF032000F1E1C /* windows_ia32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windows_ia32.h; sourceTree = "<group>"; };
+		4115B66120BEF032000F1E1C /* windows_intel64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windows_intel64.h; sourceTree = "<group>"; };
+		4115B66220BEF032000F1E1C /* xbox360_ppc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xbox360_ppc.h; sourceTree = "<group>"; };
+		4115B66320BEF032000F1E1C /* memory_pool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_pool.h; sourceTree = "<group>"; };
+		4115B66420BEF032000F1E1C /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mutex.h; sourceTree = "<group>"; };
+		4115B66520BEF032000F1E1C /* null_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = null_mutex.h; sourceTree = "<group>"; };
+		4115B66620BEF032000F1E1C /* null_rw_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = null_rw_mutex.h; sourceTree = "<group>"; };
+		4115B66720BEF032000F1E1C /* parallel_do.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallel_do.h; sourceTree = "<group>"; };
+		4115B66820BEF032000F1E1C /* parallel_for.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallel_for.h; sourceTree = "<group>"; };
+		4115B66920BEF032000F1E1C /* parallel_for_each.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallel_for_each.h; sourceTree = "<group>"; };
+		4115B66A20BEF032000F1E1C /* parallel_invoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallel_invoke.h; sourceTree = "<group>"; };
+		4115B66B20BEF032000F1E1C /* parallel_reduce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallel_reduce.h; sourceTree = "<group>"; };
+		4115B66C20BEF032000F1E1C /* parallel_scan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallel_scan.h; sourceTree = "<group>"; };
+		4115B66D20BEF032000F1E1C /* parallel_sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallel_sort.h; sourceTree = "<group>"; };
+		4115B66E20BEF032000F1E1C /* parallel_while.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallel_while.h; sourceTree = "<group>"; };
+		4115B66F20BEF032000F1E1C /* partitioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partitioner.h; sourceTree = "<group>"; };
+		4115B67020BEF032000F1E1C /* pipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pipeline.h; sourceTree = "<group>"; };
+		4115B67120BEF032000F1E1C /* queuing_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queuing_mutex.h; sourceTree = "<group>"; };
+		4115B67220BEF032000F1E1C /* queuing_rw_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queuing_rw_mutex.h; sourceTree = "<group>"; };
+		4115B67320BEF032000F1E1C /* reader_writer_lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader_writer_lock.h; sourceTree = "<group>"; };
+		4115B67420BEF032000F1E1C /* recursive_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recursive_mutex.h; sourceTree = "<group>"; };
+		4115B67520BEF032000F1E1C /* runtime_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runtime_loader.h; sourceTree = "<group>"; };
+		4115B67620BEF032000F1E1C /* scalable_allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalable_allocator.h; sourceTree = "<group>"; };
+		4115B67720BEF032000F1E1C /* spin_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spin_mutex.h; sourceTree = "<group>"; };
+		4115B67820BEF032000F1E1C /* spin_rw_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spin_rw_mutex.h; sourceTree = "<group>"; };
+		4115B67920BEF032000F1E1C /* task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = task.h; sourceTree = "<group>"; };
+		4115B67A20BEF032000F1E1C /* task_arena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = task_arena.h; sourceTree = "<group>"; };
+		4115B67B20BEF032000F1E1C /* task_group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = task_group.h; sourceTree = "<group>"; };
+		4115B67C20BEF032000F1E1C /* task_scheduler_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = task_scheduler_init.h; sourceTree = "<group>"; };
+		4115B67D20BEF032000F1E1C /* task_scheduler_observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = task_scheduler_observer.h; sourceTree = "<group>"; };
+		4115B67E20BEF032000F1E1C /* tbb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbb.h; sourceTree = "<group>"; };
+		4115B67F20BEF032000F1E1C /* tbb_allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbb_allocator.h; sourceTree = "<group>"; };
+		4115B68020BEF032000F1E1C /* tbb_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbb_config.h; sourceTree = "<group>"; };
+		4115B68120BEF032000F1E1C /* tbb_exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbb_exception.h; sourceTree = "<group>"; };
+		4115B68220BEF032000F1E1C /* tbb_machine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbb_machine.h; sourceTree = "<group>"; };
+		4115B68320BEF032000F1E1C /* tbb_profiling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbb_profiling.h; sourceTree = "<group>"; };
+		4115B68420BEF032000F1E1C /* tbb_stddef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbb_stddef.h; sourceTree = "<group>"; };
+		4115B68520BEF032000F1E1C /* tbb_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbb_thread.h; sourceTree = "<group>"; };
+		4115B68620BEF032000F1E1C /* tbbmalloc_proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbbmalloc_proxy.h; sourceTree = "<group>"; };
+		4115B68720BEF032000F1E1C /* tick_count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tick_count.h; sourceTree = "<group>"; };
+		4115B68920BEF032000F1E1C /* Archive+Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Archive+Reading.swift"; sourceTree = "<group>"; };
+		4115B68A20BEF032000F1E1C /* Archive+Writing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Archive+Writing.swift"; sourceTree = "<group>"; };
+		4115B68B20BEF032000F1E1C /* Archive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		4115B68C20BEF032000F1E1C /* Data+Compression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Compression.swift"; sourceTree = "<group>"; };
+		4115B68D20BEF032000F1E1C /* Data+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Serialization.swift"; sourceTree = "<group>"; };
+		4115B68E20BEF032000F1E1C /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		4115B68F20BEF032000F1E1C /* FileManager+ZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ZIP.swift"; sourceTree = "<group>"; };
+		4115B6B720BEF098000F1E1C /* HCKalmanAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCKalmanAlgorithm.swift; sourceTree = "<group>"; };
+		4115B6B820BEF098000F1E1C /* HCMatrixObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCMatrixObject.swift; sourceTree = "<group>"; };
+		4127F03320AD4EE50010E5C0 /* daz3duv.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = daz3duv.plist; sourceTree = "<group>"; };
+		4149E56C20DD744B0015FE76 /* displacementFragment.scnmodifier */ = {isa = PBXFileReference; lastKnownFileType = text; path = displacementFragment.scnmodifier; sourceTree = "<group>"; };
+		414BD637209B8ABF00303B92 /* ShaderCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderCommon.h; sourceTree = "<group>"; };
+		414BD639209B8E7A00303B92 /* ShaderCommon.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ShaderCommon.metal; sourceTree = "<group>"; };
+		414BFD73209A2A7700FA5B1E /* AnimatedSpriteNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSpriteNode.swift; sourceTree = "<group>"; };
+		414BFD75209A610D00FA5B1E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		414BFD76209A611800FA5B1E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		4157E8412072D67B00CBD760 /* LUT.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LUT.metal; sourceTree = "<group>"; };
+		41615DC220759C14004A9C50 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		41615DCF2075A021004A9C50 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		41615DD02075A021004A9C50 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		416854EF20BE007300F27628 /* defaultCoords.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaultCoords.plist; sourceTree = "<group>"; };
+		416854F120BE029900F27628 /* alternateCoords.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = alternateCoords.plist; sourceTree = "<group>"; };
+		416E0D51207EA13D0074E9AD /* reducedIndices.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = reducedIndices.bin; sourceTree = "<group>"; };
+		416E0DA4207EAE440074E9AD /* model_eye */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model_eye; sourceTree = "<group>"; };
+		417F91ED207FDFF500DCB4A7 /* libtbbmalloc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtbbmalloc.a; sourceTree = "<group>"; };
+		417F91EE207FDFF500DCB4A7 /* libtbb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtbb.a; sourceTree = "<group>"; };
+		417F91EF207FDFF500DCB4A7 /* libtbbmalloc_proxy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtbbmalloc_proxy.a; sourceTree = "<group>"; };
+		41864B7020C0ADA1002E184F /* Aviator.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Aviator.scnassets; sourceTree = "<group>"; };
+		41864B7220C588A5002E184F /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		41864B7320C5CFA1002E184F /* makeupFragment.scnmodifier */ = {isa = PBXFileReference; lastKnownFileType = text; path = makeupFragment.scnmodifier; sourceTree = "<group>"; };
+		4187AFAE2053525A0080B6BC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		4187AFB02056F1AA0080B6BC /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		4187AFB22056FE360080B6BC /* VirtualFaceContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualFaceContent.swift; sourceTree = "<group>"; };
+		4198C32620509FC700D27F2A /* ARMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4198C32920509FC700D27F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4198C32B20509FC700D27F2A /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		4198C32D20509FC700D27F2A /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		4198C32E20509FC700D27F2A /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		4198C33320509FC700D27F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4198C33520509FC700D27F2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4198C33820509FC700D27F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4198C33A20509FC700D27F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4198C33B20509FC700D27F2A /* ARMetal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARMetal-Bridging-Header.h"; sourceTree = "<group>"; };
+		41A09356206AF7F50058FA2E /* RenderDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderDestination.swift; sourceTree = "<group>"; };
+		41A09358206AF8100058FA2E /* RenderDestinationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderDestinationProvider.swift; sourceTree = "<group>"; };
+		41A0935A206B167C0058FA2E /* MetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
+		41A0935D206C6FF70058FA2E /* RenderPixelBufferConsumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPixelBufferConsumer.swift; sourceTree = "<group>"; };
+		41A0935F206C749F0058FA2E /* RenderedVideoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderedVideoWriter.swift; sourceTree = "<group>"; };
+		41A09361206C87D90058FA2E /* FaceMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMask.swift; sourceTree = "<group>"; };
+		41A98AD820ADF3310046D938 /* MaskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskInfo.swift; sourceTree = "<group>"; };
+		41AD124B20AC9F4300B18803 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		41B46AC12062D1CD00BA005B /* Retouch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Retouch.metal; sourceTree = "<group>"; };
+		41C55EA9205C1888007DEC7B /* AVLoopedlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLoopedlayer.swift; sourceTree = "<group>"; };
+		41E184D720EEA3B000C835F3 /* geo2.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = geo2.scnassets; sourceTree = "<group>"; };
+		41F68D9320D4916400605F94 /* displacementGeometry.scnmodifier */ = {isa = PBXFileReference; lastKnownFileType = text; path = displacementGeometry.scnmodifier; sourceTree = "<group>"; };
+		420604B781E07544124972D2 /* Pods-ARMetal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARMetal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARMetal/Pods-ARMetal.debug.xcconfig"; sourceTree = "<group>"; };
+		D10A4B640D39D19FC108DC1C /* Pods-ARMetal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARMetal.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARMetal/Pods-ARMetal.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4198C32320509FC700D27F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417F91F0207FDFF500DCB4A7 /* libtbbmalloc.a in Frameworks */,
+				417F91F1207FDFF500DCB4A7 /* libtbb.a in Frameworks */,
+				417F91F2207FDFF500DCB4A7 /* libtbbmalloc_proxy.a in Frameworks */,
+				41615DC320759C14004A9C50 /* opencv2.framework in Frameworks */,
+				AB42833302D3C702BB95FB24 /* Pods_ARMetal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4115B5F220BEF032000F1E1C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4115B6B620BEF098000F1E1C /* KalmanFilter */,
+				4115B5F320BEF032000F1E1C /* GazeEstimate */,
+				4115B5F620BEF032000F1E1C /* LandmarkDetector */,
+				4115B61020BEF032000F1E1C /* Surge */,
+				4115B62120BEF032000F1E1C /* tbb */,
+				4115B68820BEF032000F1E1C /* ZIPFoundation */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4115B5F320BEF032000F1E1C /* GazeEstimate */ = {
+			isa = PBXGroup;
+			children = (
+				4115B5F420BEF032000F1E1C /* GazeEstimation.cpp */,
+				4115B5F520BEF032000F1E1C /* GazeEstimation.h */,
+			);
+			path = GazeEstimate;
+			sourceTree = "<group>";
+		};
+		4115B5F620BEF032000F1E1C /* LandmarkDetector */ = {
+			isa = PBXGroup;
+			children = (
+				4115B5F720BEF032000F1E1C /* include */,
+				4115B60420BEF032000F1E1C /* src */,
+			);
+			path = LandmarkDetector;
+			sourceTree = "<group>";
+		};
+		4115B5F720BEF032000F1E1C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4115B5F820BEF032000F1E1C /* CCNF_patch_expert.h */,
+				4115B5F920BEF032000F1E1C /* LandmarkCoreIncludes.h */,
+				4115B5FA20BEF032000F1E1C /* LandmarkDetectionValidator.h */,
+				4115B5FB20BEF032000F1E1C /* LandmarkDetectorFunc.h */,
+				4115B5FC20BEF032000F1E1C /* LandmarkDetectorModel.h */,
+				4115B5FD20BEF032000F1E1C /* LandmarkDetectorParameters.h */,
+				4115B5FE20BEF032000F1E1C /* LandmarkDetectorUtils.h */,
+				4115B5FF20BEF032000F1E1C /* Patch_experts.h */,
+				4115B60020BEF032000F1E1C /* PAW.h */,
+				4115B60120BEF032000F1E1C /* PDM.h */,
+				4115B60220BEF032000F1E1C /* stdafx.h */,
+				4115B60320BEF032000F1E1C /* SVR_patch_expert.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4115B60420BEF032000F1E1C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4115B60520BEF032000F1E1C /* CCNF_patch_expert.cpp */,
+				4115B60620BEF032000F1E1C /* LandmarkDetectionValidator.cpp */,
+				4115B60720BEF032000F1E1C /* LandmarkDetectorFunc.cpp */,
+				4115B60820BEF032000F1E1C /* LandmarkDetectorModel.cpp */,
+				4115B60920BEF032000F1E1C /* LandmarkDetectorParameters.cpp */,
+				4115B60A20BEF032000F1E1C /* LandmarkDetectorUtils.cpp */,
+				4115B60B20BEF032000F1E1C /* Patch_experts.cpp */,
+				4115B60C20BEF032000F1E1C /* PAW.cpp */,
+				4115B60D20BEF032000F1E1C /* PDM.cpp */,
+				4115B60E20BEF032000F1E1C /* stdafx.cpp */,
+				4115B60F20BEF032000F1E1C /* SVR_patch_expert.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4115B61020BEF032000F1E1C /* Surge */ = {
+			isa = PBXGroup;
+			children = (
+				4115B61120BEF032000F1E1C /* Arithmetic.swift */,
+				4115B61220BEF032000F1E1C /* ArraySliceUnsafeMemory.swift */,
+				4115B61320BEF032000F1E1C /* ArrayUnsafeMemory.swift */,
+				4115B61420BEF032000F1E1C /* Auxiliary.swift */,
+				4115B61520BEF032000F1E1C /* Convolution.swift */,
+				4115B61620BEF032000F1E1C /* Exponential.swift */,
+				4115B61720BEF032000F1E1C /* FFT.swift */,
+				4115B61820BEF032000F1E1C /* Hyperbolic.swift */,
+				4115B61920BEF032000F1E1C /* Matrix.swift */,
+				4115B61A20BEF032000F1E1C /* Pointers.swift */,
+				4115B61B20BEF032000F1E1C /* Power.swift */,
+				4115B61C20BEF032000F1E1C /* Statistics.swift */,
+				4115B61D20BEF032000F1E1C /* Surge.h */,
+				4115B61E20BEF032000F1E1C /* Trigonometric.swift */,
+				4115B61F20BEF032000F1E1C /* UnsafeMemory.swift */,
+				4115B62020BEF032000F1E1C /* UnsafeMutableMemory.swift */,
+			);
+			path = Surge;
+			sourceTree = "<group>";
+		};
+		4115B62120BEF032000F1E1C /* tbb */ = {
+			isa = PBXGroup;
+			children = (
+				4115B62220BEF032000F1E1C /* aggregator.h */,
+				4115B62320BEF032000F1E1C /* aligned_space.h */,
+				4115B62420BEF032000F1E1C /* atomic.h */,
+				4115B62520BEF032000F1E1C /* blocked_range.h */,
+				4115B62620BEF032000F1E1C /* blocked_range2d.h */,
+				4115B62720BEF032000F1E1C /* blocked_range3d.h */,
+				4115B62820BEF032000F1E1C /* cache_aligned_allocator.h */,
+				4115B62920BEF032000F1E1C /* combinable.h */,
+				4115B62A20BEF032000F1E1C /* compat */,
+				4115B62F20BEF032000F1E1C /* concurrent_hash_map.h */,
+				4115B63020BEF032000F1E1C /* concurrent_lru_cache.h */,
+				4115B63120BEF032000F1E1C /* concurrent_priority_queue.h */,
+				4115B63220BEF032000F1E1C /* concurrent_queue.h */,
+				4115B63320BEF032000F1E1C /* concurrent_unordered_map.h */,
+				4115B63420BEF032000F1E1C /* concurrent_unordered_set.h */,
+				4115B63520BEF032000F1E1C /* concurrent_vector.h */,
+				4115B63620BEF032000F1E1C /* critical_section.h */,
+				4115B63720BEF032000F1E1C /* enumerable_thread_specific.h */,
+				4115B63820BEF032000F1E1C /* flow_graph.h */,
+				4115B63920BEF032000F1E1C /* global_control.h */,
+				4115B63A20BEF032000F1E1C /* index.html */,
+				4115B63B20BEF032000F1E1C /* internal */,
+				4115B64E20BEF032000F1E1C /* machine */,
+				4115B66320BEF032000F1E1C /* memory_pool.h */,
+				4115B66420BEF032000F1E1C /* mutex.h */,
+				4115B66520BEF032000F1E1C /* null_mutex.h */,
+				4115B66620BEF032000F1E1C /* null_rw_mutex.h */,
+				4115B66720BEF032000F1E1C /* parallel_do.h */,
+				4115B66820BEF032000F1E1C /* parallel_for.h */,
+				4115B66920BEF032000F1E1C /* parallel_for_each.h */,
+				4115B66A20BEF032000F1E1C /* parallel_invoke.h */,
+				4115B66B20BEF032000F1E1C /* parallel_reduce.h */,
+				4115B66C20BEF032000F1E1C /* parallel_scan.h */,
+				4115B66D20BEF032000F1E1C /* parallel_sort.h */,
+				4115B66E20BEF032000F1E1C /* parallel_while.h */,
+				4115B66F20BEF032000F1E1C /* partitioner.h */,
+				4115B67020BEF032000F1E1C /* pipeline.h */,
+				4115B67120BEF032000F1E1C /* queuing_mutex.h */,
+				4115B67220BEF032000F1E1C /* queuing_rw_mutex.h */,
+				4115B67320BEF032000F1E1C /* reader_writer_lock.h */,
+				4115B67420BEF032000F1E1C /* recursive_mutex.h */,
+				4115B67520BEF032000F1E1C /* runtime_loader.h */,
+				4115B67620BEF032000F1E1C /* scalable_allocator.h */,
+				4115B67720BEF032000F1E1C /* spin_mutex.h */,
+				4115B67820BEF032000F1E1C /* spin_rw_mutex.h */,
+				4115B67920BEF032000F1E1C /* task.h */,
+				4115B67A20BEF032000F1E1C /* task_arena.h */,
+				4115B67B20BEF032000F1E1C /* task_group.h */,
+				4115B67C20BEF032000F1E1C /* task_scheduler_init.h */,
+				4115B67D20BEF032000F1E1C /* task_scheduler_observer.h */,
+				4115B67E20BEF032000F1E1C /* tbb.h */,
+				4115B67F20BEF032000F1E1C /* tbb_allocator.h */,
+				4115B68020BEF032000F1E1C /* tbb_config.h */,
+				4115B68120BEF032000F1E1C /* tbb_exception.h */,
+				4115B68220BEF032000F1E1C /* tbb_machine.h */,
+				4115B68320BEF032000F1E1C /* tbb_profiling.h */,
+				4115B68420BEF032000F1E1C /* tbb_stddef.h */,
+				4115B68520BEF032000F1E1C /* tbb_thread.h */,
+				4115B68620BEF032000F1E1C /* tbbmalloc_proxy.h */,
+				4115B68720BEF032000F1E1C /* tick_count.h */,
+			);
+			path = tbb;
+			sourceTree = "<group>";
+		};
+		4115B62A20BEF032000F1E1C /* compat */ = {
+			isa = PBXGroup;
+			children = (
+				4115B62B20BEF032000F1E1C /* condition_variable */,
+				4115B62C20BEF032000F1E1C /* ppl.h */,
+				4115B62D20BEF032000F1E1C /* thread */,
+				4115B62E20BEF032000F1E1C /* tuple */,
+			);
+			path = compat;
+			sourceTree = "<group>";
+		};
+		4115B63B20BEF032000F1E1C /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				4115B63C20BEF032000F1E1C /* _aggregator_impl.h */,
+				4115B63D20BEF032000F1E1C /* _concurrent_queue_impl.h */,
+				4115B63E20BEF032000F1E1C /* _concurrent_unordered_impl.h */,
+				4115B63F20BEF032000F1E1C /* _flow_graph_impl.h */,
+				4115B64020BEF032000F1E1C /* _flow_graph_indexer_impl.h */,
+				4115B64120BEF032000F1E1C /* _flow_graph_item_buffer_impl.h */,
+				4115B64220BEF032000F1E1C /* _flow_graph_join_impl.h */,
+				4115B64320BEF032000F1E1C /* _flow_graph_node_impl.h */,
+				4115B64420BEF032000F1E1C /* _flow_graph_tagged_buffer_impl.h */,
+				4115B64520BEF032000F1E1C /* _flow_graph_trace_impl.h */,
+				4115B64620BEF032000F1E1C /* _flow_graph_types_impl.h */,
+				4115B64720BEF032000F1E1C /* _mutex_padding.h */,
+				4115B64820BEF032000F1E1C /* _range_iterator.h */,
+				4115B64920BEF032000F1E1C /* _tbb_strings.h */,
+				4115B64A20BEF032000F1E1C /* _tbb_windef.h */,
+				4115B64B20BEF032000F1E1C /* _template_helpers.h */,
+				4115B64C20BEF032000F1E1C /* _x86_eliding_mutex_impl.h */,
+				4115B64D20BEF032000F1E1C /* _x86_rtm_rw_mutex_impl.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		4115B64E20BEF032000F1E1C /* machine */ = {
+			isa = PBXGroup;
+			children = (
+				4115B64F20BEF032000F1E1C /* gcc_armv7.h */,
+				4115B65020BEF032000F1E1C /* gcc_generic.h */,
+				4115B65120BEF032000F1E1C /* gcc_ia32_common.h */,
+				4115B65220BEF032000F1E1C /* gcc_itsx.h */,
+				4115B65320BEF032000F1E1C /* ibm_aix51.h */,
+				4115B65420BEF032000F1E1C /* icc_generic.h */,
+				4115B65520BEF032000F1E1C /* linux_common.h */,
+				4115B65620BEF032000F1E1C /* linux_ia32.h */,
+				4115B65720BEF032000F1E1C /* linux_ia64.h */,
+				4115B65820BEF032000F1E1C /* linux_intel64.h */,
+				4115B65920BEF032000F1E1C /* mac_ppc.h */,
+				4115B65A20BEF032000F1E1C /* macos_common.h */,
+				4115B65B20BEF032000F1E1C /* mic_common.h */,
+				4115B65C20BEF032000F1E1C /* msvc_armv7.h */,
+				4115B65D20BEF032000F1E1C /* msvc_ia32_common.h */,
+				4115B65E20BEF032000F1E1C /* sunos_sparc.h */,
+				4115B65F20BEF032000F1E1C /* windows_api.h */,
+				4115B66020BEF032000F1E1C /* windows_ia32.h */,
+				4115B66120BEF032000F1E1C /* windows_intel64.h */,
+				4115B66220BEF032000F1E1C /* xbox360_ppc.h */,
+			);
+			path = machine;
+			sourceTree = "<group>";
+		};
+		4115B68820BEF032000F1E1C /* ZIPFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				4115B68920BEF032000F1E1C /* Archive+Reading.swift */,
+				4115B68A20BEF032000F1E1C /* Archive+Writing.swift */,
+				4115B68B20BEF032000F1E1C /* Archive.swift */,
+				4115B68C20BEF032000F1E1C /* Data+Compression.swift */,
+				4115B68D20BEF032000F1E1C /* Data+Serialization.swift */,
+				4115B68E20BEF032000F1E1C /* Entry.swift */,
+				4115B68F20BEF032000F1E1C /* FileManager+ZIP.swift */,
+			);
+			path = ZIPFoundation;
+			sourceTree = "<group>";
+		};
+		4115B6B620BEF098000F1E1C /* KalmanFilter */ = {
+			isa = PBXGroup;
+			children = (
+				4115B6B720BEF098000F1E1C /* HCKalmanAlgorithm.swift */,
+				4115B6B820BEF098000F1E1C /* HCMatrixObject.swift */,
+			);
+			path = KalmanFilter;
+			sourceTree = "<group>";
+		};
+		416E0D43207EA13D0074E9AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				416854EF20BE007300F27628 /* defaultCoords.plist */,
+				416854F120BE029900F27628 /* alternateCoords.plist */,
+				4127F03320AD4EE50010E5C0 /* daz3duv.plist */,
+				416E0DA4207EAE440074E9AD /* model_eye */,
+				416E0D51207EA13D0074E9AD /* reducedIndices.bin */,
+				41864B7320C5CFA1002E184F /* makeupFragment.scnmodifier */,
+				41F68D9320D4916400605F94 /* displacementGeometry.scnmodifier */,
+				4149E56C20DD744B0015FE76 /* displacementFragment.scnmodifier */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4187AFB4205742530080B6BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41864B7220C588A5002E184F /* SceneKit.framework */,
+				414BFD76209A611800FA5B1E /* SpriteKit.framework */,
+				414BFD75209A610D00FA5B1E /* CoreImage.framework */,
+				417F91EE207FDFF500DCB4A7 /* libtbb.a */,
+				417F91EF207FDFF500DCB4A7 /* libtbbmalloc_proxy.a */,
+				417F91ED207FDFF500DCB4A7 /* libtbbmalloc.a */,
+				41615DC220759C14004A9C50 /* opencv2.framework */,
+				1878880176F7824272876B61 /* Pods_ARMetal.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		4198C31D20509FC700D27F2A = {
+			isa = PBXGroup;
+			children = (
+				4198C32820509FC700D27F2A /* ARMetal */,
+				416E0D43207EA13D0074E9AD /* Resources */,
+				4198C32720509FC700D27F2A /* Products */,
+				4187AFB4205742530080B6BC /* Frameworks */,
+				B934D5740532C3A95482F6B8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4198C32720509FC700D27F2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4198C32620509FC700D27F2A /* ARMetal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4198C32820509FC700D27F2A /* ARMetal */ = {
+			isa = PBXGroup;
+			children = (
+				4115B5F220BEF032000F1E1C /* lib */,
+				4198C32920509FC700D27F2A /* AppDelegate.swift */,
+				41615DCF2075A021004A9C50 /* OpenCVWrapper.h */,
+				41615DD02075A021004A9C50 /* OpenCVWrapper.mm */,
+				4198C32E20509FC700D27F2A /* Renderer.swift */,
+				41A0935A206B167C0058FA2E /* MetalViewController.swift */,
+				41A09358206AF8100058FA2E /* RenderDestinationProvider.swift */,
+				41A0935D206C6FF70058FA2E /* RenderPixelBufferConsumer.swift */,
+				41A0935F206C749F0058FA2E /* RenderedVideoWriter.swift */,
+				41A09356206AF7F50058FA2E /* RenderDestination.swift */,
+				4187AFAE2053525A0080B6BC /* Utilities.swift */,
+				414BFD73209A2A7700FA5B1E /* AnimatedSpriteNode.swift */,
+				41A09361206C87D90058FA2E /* FaceMask.swift */,
+				4187AFB02056F1AA0080B6BC /* Overlay.swift */,
+				4187AFB22056FE360080B6BC /* VirtualFaceContent.swift */,
+				41A98AD820ADF3310046D938 /* MaskInfo.swift */,
+				41C55EA9205C1888007DEC7B /* AVLoopedlayer.swift */,
+				4198C33220509FC700D27F2A /* Main.storyboard */,
+				4198C33520509FC700D27F2A /* Assets.xcassets */,
+				4198C33720509FC700D27F2A /* LaunchScreen.storyboard */,
+				4198C33A20509FC700D27F2A /* Info.plist */,
+				4198C33B20509FC700D27F2A /* ARMetal-Bridging-Header.h */,
+				4198C32B20509FC700D27F2A /* Shaders.metal */,
+				41B46AC12062D1CD00BA005B /* Retouch.metal */,
+				414BD637209B8ABF00303B92 /* ShaderCommon.h */,
+				414BD639209B8E7A00303B92 /* ShaderCommon.metal */,
+				4198C32D20509FC700D27F2A /* ShaderTypes.h */,
+				4157E8412072D67B00CBD760 /* LUT.metal */,
+				41D7783020CB0FC300239B1F /* Models */,
+			);
+			path = ARMetal;
+			sourceTree = "<group>";
+		};
+		41D7783020CB0FC300239B1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				411409EE215045B50074CF43 /* Bowie2.scnassets */,
+				41E184D720EEA3B000C835F3 /* geo2.scnassets */,
+				41864B7020C0ADA1002E184F /* Aviator.scnassets */,
+				41AD124B20AC9F4300B18803 /* Models.scnassets */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B934D5740532C3A95482F6B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				420604B781E07544124972D2 /* Pods-ARMetal.debug.xcconfig */,
+				D10A4B640D39D19FC108DC1C /* Pods-ARMetal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4198C32520509FC700D27F2A /* ARMetal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4198C33E20509FC700D27F2A /* Build configuration list for PBXNativeTarget "ARMetal" */;
+			buildPhases = (
+				F21C9BEF14177AA0E000C650 /* [CP] Check Pods Manifest.lock */,
+				41F04BDB20D3203500F2F6D5 /* ShellScript */,
+				4198C32220509FC700D27F2A /* Sources */,
+				4198C32320509FC700D27F2A /* Frameworks */,
+				4198C32420509FC700D27F2A /* Resources */,
+				100CD5F546A70ED1B64E52AC /* [CP] Embed Pods Frameworks */,
+				3300CF22F9980F60F660CF13 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARMetal;
+			productName = ARMetal;
+			productReference = 4198C32620509FC700D27F2A /* ARMetal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4198C31E20509FC700D27F2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Wurrly;
+				TargetAttributes = {
+					4198C32520509FC700D27F2A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4198C32120509FC700D27F2A /* Build configuration list for PBXProject "ARMetal" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4198C31D20509FC700D27F2A;
+			productRefGroup = 4198C32720509FC700D27F2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4198C32520509FC700D27F2A /* ARMetal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4198C32420509FC700D27F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41864B7520C5D013002E184F /* makeupFragment.scnmodifier in Resources */,
+				4115B6AC20BEF033000F1E1C /* thread in Resources */,
+				416854F020BE007300F27628 /* defaultCoords.plist in Resources */,
+				41F68D9420D4916400605F94 /* displacementGeometry.scnmodifier in Resources */,
+				416854F220BE029900F27628 /* alternateCoords.plist in Resources */,
+				4198C33920509FC700D27F2A /* LaunchScreen.storyboard in Resources */,
+				41E184D820EEA3B000C835F3 /* geo2.scnassets in Resources */,
+				4115B6AB20BEF033000F1E1C /* condition_variable in Resources */,
+				4198C33620509FC700D27F2A /* Assets.xcassets in Resources */,
+				4127F03420AD4EE50010E5C0 /* daz3duv.plist in Resources */,
+				4149E56D20DD744B0015FE76 /* displacementFragment.scnmodifier in Resources */,
+				416E0DA6207EAE710074E9AD /* model_eye in Resources */,
+				4198C33420509FC700D27F2A /* Main.storyboard in Resources */,
+				4115B6AE20BEF033000F1E1C /* index.html in Resources */,
+				4115B6AD20BEF033000F1E1C /* tuple in Resources */,
+				41864B7120C0ADA1002E184F /* Aviator.scnassets in Resources */,
+				411409EF215045B50074CF43 /* Bowie2.scnassets in Resources */,
+				41AD124C20AC9F4300B18803 /* Models.scnassets in Resources */,
+				416E0D5C207EA13D0074E9AD /* reducedIndices.bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		100CD5F546A70ED1B64E52AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ARMetal/Pods-ARMetal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HCKalmanFilter/HCKalmanFilter.framework",
+				"${BUILT_PRODUCTS_DIR}/Surge/Surge.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCKalmanFilter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Surge.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARMetal/Pods-ARMetal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3300CF22F9980F60F660CF13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARMetal/Pods-ARMetal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41F04BDB20D3203500F2F6D5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "for i in \"${SRCROOT}/ARMetal/*.scnassets\"; do xattr -cr $i; done;";
+		};
+		F21C9BEF14177AA0E000C650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARMetal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4198C32220509FC700D27F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A09357206AF7F50058FA2E /* RenderDestination.swift in Sources */,
+				4115B6A120BEF033000F1E1C /* Exponential.swift in Sources */,
+				4115B6A720BEF033000F1E1C /* Statistics.swift in Sources */,
+				4187AFAF2053525A0080B6BC /* Utilities.swift in Sources */,
+				4115B69020BEF033000F1E1C /* GazeEstimation.cpp in Sources */,
+				4198C32C20509FC700D27F2A /* Shaders.metal in Sources */,
+				4115B6B320BEF033000F1E1C /* Data+Serialization.swift in Sources */,
+				4115B6B520BEF033000F1E1C /* FileManager+ZIP.swift in Sources */,
+				4115B6A020BEF033000F1E1C /* Convolution.swift in Sources */,
+				4115B6AF20BEF033000F1E1C /* Archive+Reading.swift in Sources */,
+				41A09360206C749F0058FA2E /* RenderedVideoWriter.swift in Sources */,
+				41A98AD920ADF3310046D938 /* MaskInfo.swift in Sources */,
+				4115B6B120BEF033000F1E1C /* Archive.swift in Sources */,
+				4115B69B20BEF033000F1E1C /* SVR_patch_expert.cpp in Sources */,
+				414BD638209B8ABF00303B92 /* ShaderCommon.h in Sources */,
+				41A09359206AF8100058FA2E /* RenderDestinationProvider.swift in Sources */,
+				4115B6A820BEF033000F1E1C /* Trigonometric.swift in Sources */,
+				4115B69C20BEF033000F1E1C /* Arithmetic.swift in Sources */,
+				4115B6B420BEF033000F1E1C /* Entry.swift in Sources */,
+				414BFD74209A2A7700FA5B1E /* AnimatedSpriteNode.swift in Sources */,
+				4115B69520BEF033000F1E1C /* LandmarkDetectorParameters.cpp in Sources */,
+				4115B6A620BEF033000F1E1C /* Power.swift in Sources */,
+				4198C32F20509FC700D27F2A /* Renderer.swift in Sources */,
+				4187AFB32056FE360080B6BC /* VirtualFaceContent.swift in Sources */,
+				4187AFB12056F1AA0080B6BC /* Overlay.swift in Sources */,
+				41A0935B206B167C0058FA2E /* MetalViewController.swift in Sources */,
+				414BD63A209B8E7A00303B92 /* ShaderCommon.metal in Sources */,
+				4115B69120BEF033000F1E1C /* CCNF_patch_expert.cpp in Sources */,
+				4115B69720BEF033000F1E1C /* Patch_experts.cpp in Sources */,
+				4115B6A520BEF033000F1E1C /* Pointers.swift in Sources */,
+				4198C32A20509FC700D27F2A /* AppDelegate.swift in Sources */,
+				4115B69A20BEF033000F1E1C /* stdafx.cpp in Sources */,
+				4115B6A420BEF033000F1E1C /* Matrix.swift in Sources */,
+				4115B6A220BEF033000F1E1C /* FFT.swift in Sources */,
+				4115B69E20BEF033000F1E1C /* ArrayUnsafeMemory.swift in Sources */,
+				4115B69220BEF033000F1E1C /* LandmarkDetectionValidator.cpp in Sources */,
+				4115B69320BEF033000F1E1C /* LandmarkDetectorFunc.cpp in Sources */,
+				4115B6B220BEF033000F1E1C /* Data+Compression.swift in Sources */,
+				4115B6BA20BEF098000F1E1C /* HCMatrixObject.swift in Sources */,
+				4115B6B920BEF098000F1E1C /* HCKalmanAlgorithm.swift in Sources */,
+				41B46AC22062D1CD00BA005B /* Retouch.metal in Sources */,
+				4115B6A320BEF033000F1E1C /* Hyperbolic.swift in Sources */,
+				41615DD12075A021004A9C50 /* OpenCVWrapper.mm in Sources */,
+				4115B69F20BEF033000F1E1C /* Auxiliary.swift in Sources */,
+				4115B69620BEF033000F1E1C /* LandmarkDetectorUtils.cpp in Sources */,
+				41C55EAA205C1888007DEC7B /* AVLoopedlayer.swift in Sources */,
+				4115B6A920BEF033000F1E1C /* UnsafeMemory.swift in Sources */,
+				4115B69420BEF033000F1E1C /* LandmarkDetectorModel.cpp in Sources */,
+				41A09362206C87D90058FA2E /* FaceMask.swift in Sources */,
+				4115B69D20BEF033000F1E1C /* ArraySliceUnsafeMemory.swift in Sources */,
+				4115B69820BEF033000F1E1C /* PAW.cpp in Sources */,
+				4115B69920BEF033000F1E1C /* PDM.cpp in Sources */,
+				41864B7420C5CFA1002E184F /* makeupFragment.scnmodifier in Sources */,
+				4115B6B020BEF033000F1E1C /* Archive+Writing.swift in Sources */,
+				41A0935E206C6FF70058FA2E /* RenderPixelBufferConsumer.swift in Sources */,
+				4115B6AA20BEF033000F1E1C /* UnsafeMutableMemory.swift in Sources */,
+				4157E8422072D67B00CBD760 /* LUT.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4198C33220509FC700D27F2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4198C33320509FC700D27F2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4198C33720509FC700D27F2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4198C33820509FC700D27F2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4198C33C20509FC700D27F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4198C33D20509FC700D27F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4198C33F20509FC700D27F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 420604B781E07544124972D2 /* Pods-ARMetal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARMetal/lib",
+				);
+				INFOPLIST_FILE = ARMetal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				MTL_OPTIMIZATION_LEVEL = 3;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sinistral.ARFaceKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARMetal/ARMetal-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4198C34020509FC700D27F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10A4B640D39D19FC108DC1C /* Pods-ARMetal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARMetal/lib",
+				);
+				INFOPLIST_FILE = ARMetal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				MTL_OPTIMIZATION_LEVEL = 3;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sinistral.ARFaceKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARMetal/ARMetal-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4198C32120509FC700D27F2A /* Build configuration list for PBXProject "ARMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4198C33C20509FC700D27F2A /* Debug */,
+				4198C33D20509FC700D27F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4198C33E20509FC700D27F2A /* Build configuration list for PBXNativeTarget "ARMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4198C33F20509FC700D27F2A /* Debug */,
+				4198C34020509FC700D27F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4198C31E20509FC700D27F2A /* Project object */;
+}

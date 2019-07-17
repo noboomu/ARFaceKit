@@ -1,0 +1,20 @@
+{
+  "textures" : [
+    {
+      "u_Texture" : {
+        "displayName" : "Diffuse"
+      }
+    }
+  ],
+  "parameters" : [
+    {
+      "u_Value" : {
+        "min" : 0,
+        "displayName" : "Value",
+        "value" : 0.7,
+        "type" : "float",
+        "max" : 1
+      }
+    }
+  ]
+}
